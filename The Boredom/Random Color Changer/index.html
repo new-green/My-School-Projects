@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+</head>
+<body>
+    <div>
+        <h1>Random Color Changer (Nobody cares hex codes)</h1><br></br>
+        <div id="changecolor"></div>
+        <p id="colorhexes"></p>
+        <input type="button" onclick="colors()" value="Change Color">
+    </div>
+    <style>
+        #changecolor{
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            border: 2px solid black;
+        }
+    </style>
+    <script>
+        function colors(){
+            const randomcolor = "#" + Math.floor(Math.random()*1677215).toString(16);
+            document.getElementById("changecolor").style.backgroundColor = randomcolor;
+            document.getElementById("colorhexes").textContent = randomcolor;
+        }
+    </script>
+</body>
+</html>

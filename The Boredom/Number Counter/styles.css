@@ -1,0 +1,10 @@
+#thecounter{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px;
+}
+button{
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+}
