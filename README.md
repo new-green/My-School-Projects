@@ -1,2 +1,2 @@
-# My-School-Projects-
+# My-School-Projects
 WebSite edition
