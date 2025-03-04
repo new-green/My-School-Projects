@@ -1,0 +1,1 @@
+setTimeout(() => {document.getElementById("sponsor").style.display="none";}, 500);
