@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="todo-container">
+        <h2>Yapılacaklar listesi</h2>
+        <input type="text" id="task" placeholder="Yeni Görev ekle">
+        <button id="addTask">Ekle</button>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Görev ekleme
+            $("#addTask").click(function(){
+                const task = $("#task").val().trim();
+                if(task !== ''){
+                    $('#taskList').append(`<li>${task}<span class="remove">&#10060;</span></li>`);
+                    $("#task").val(""); // input'u temizle
+                }
+            });
+            //Enter Tuşu ile ekleme
+            $('#task').keypress(function(e){
+                if(e.which==13){
+                    $('addTask').click();
+                }});
+                //Silme işlemi
+            $('#taskList').on('click', '.remove', function(){
+                $(this).parent().remove();
+            });
+        });
+
+    </script>
+</body>
+</html>
