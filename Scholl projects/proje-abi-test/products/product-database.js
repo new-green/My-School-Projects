@@ -1,0 +1,83 @@
+const products = [
+    {
+        id: 1,
+        name: "Akıllı Saat Pro",
+        price: 1299.00,
+        image: "saat.jpg",
+        category: "Elektronik",
+        installment: 6,
+        stock: 10,
+        brand: "TechMaster",
+        rating: 4.8
+    },
+    {
+        id: 2,
+        name: "Kablosuz Kulaklık",
+        price: 599.99,
+        image: "kulaklik.jpg",
+        category: "Elektronik",
+        installment: 3,
+        stock: 15,
+        brand: "SoundWave",
+        rating: 4.5
+    },
+    {
+        id: 3,
+        name: "Kahve Makinesi",
+        price: 1499.00,
+        image: "kahve-makinesi.jpg",
+        category: "Ev Yaşam",
+        installment: 9,
+        stock: 8,
+        brand: "HomeChef",
+        rating: 4.7
+    },
+    {
+        id: 4,
+        name: "Spor Ayakkabı",
+        price: 799.00,
+        image: "spor-ayakkabi.jpg",
+        category: "Moda",
+        installment: 3,
+        stock: 20,
+        brand: "FastStep",
+        rating: 4.9,
+        sizes: ["38", "39", "40", "41"]
+    },
+    {
+        id: 5,
+        name: "Bambu Bardak Seti",
+        price: 129.90,
+        image: "bambu-bardak.jpg",
+        category: "Mutfak",
+        installment: 1,
+        stock: 50,
+        brand: "EcoLife",
+        rating: 4.6
+    },
+    {
+        id: 6,
+        name: "Akıllı LED TV 55''",
+        price: 8999.00,
+        image: "led-tv.jpg",
+        category: "Elektronik",
+        installment: 12,
+        stock: 5,
+        brand: "VisionPlus",
+        rating: 4.8,
+        features: ["4K UHD", "Smart TV", "HDR10+"]
+    },
+    {
+        id: 7,
+        name: "Toptan Çocuk Oyuncak Seti",
+        price: 349.90,
+        image: "oyuncak-set.jpg",
+        category: "Oyuncak",
+        installment: 2,
+        stock: 30,
+        brand: "FunWorld",
+        rating: 4.4,
+        ageGroup: "3-6 Yaş"
+    },
+    
+];

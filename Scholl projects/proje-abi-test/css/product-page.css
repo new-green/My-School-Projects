@@ -1,0 +1,75 @@
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar-container {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #121212;
+    color: aliceblue;
+}
+h1{
+    margin: 0;
+    padding: 10;
+    text-align: left;
+}
+.parent-section{
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0%;
+}
+.logo{
+    height: 40px;
+    margin-right: 10px;
+}  
+.brand-text{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}  
+.brand-name{
+    color: #c0c0c0;
+    font-size: 20px;
+}  
+.premium-link{
+    color: #888;
+    font-size: 14px;
+    text-decoration: none;
+}
+.premium-link:hover{
+    text-decoration: underline;
+}
+.navbar{
+    margin-left: auto;
+}
+#product-name{
+    text-align: center;
+    font-size: 50px;
+}
+#product-image{
+    display: block;
+    margin: 0 auto;
+
+}
+#product-brand{
+    text-align: center;
+    font-size: 100px;
+}
+#product-price{
+    text-align: center;
+}
