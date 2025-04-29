@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sepetim</title>
+    <link rel="stylesheet" href="../css/cart.css">
 </head>
 <body>
+    <section class="parent-section">
+        <div class="logo-container">
+            <img src="../extras/pp.png" alt="Logo" class="logo">
+            <div class="brand-text">
+                <span class="brand-name">New_Green Market Place TEST</span>
+                <a href="./alt-site/pre.html" class="premium-link">Özel sürümü satın al.</a>
+            </div>
+            <div class="navbar">
+                <a href="../alt-site/cart.html" class="cart-button">
+                    <img src="../extras/cart.png" alt="Sepet" width="50" class="cart-filter">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="cart-section">
+        <div>
+            <h2>Sepetiniz <span id="cartCount">(0)</span></h2>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Sepetiniz boş</p>
+            </div>
+            <div class="cart-total">
+                Toplam: <span id="cartTotal">0</span> TL
+            </div>
+        </div>
+    </section>
+    <script src="../scripts/cart.js"></script>
     
 </body>
 </html>

@@ -11,3 +11,17 @@ window.onload = () => {
         document.body.innerHTML = "<p>Ürün bulunamadı.</p>";
     }
 };
+
+document.getElementById("add-to-cart").addEventListener("click", () => {
+    const product = {
+        name: document.getElementById("product-name").textContent,
+        price: document.getElementById("product-price").textContent,
+        image: document.getElementById("product-image").src
+    };
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push(product);
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert("Ürün sepete eklendi!");
+});
