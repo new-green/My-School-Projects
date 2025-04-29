@@ -1,82 +1,89 @@
-class Cart {
-    constructor() {
-        this.items = [];
-        this.loadCart();
+const cartContainer = document.getElementById("cart-items");
+const totalPriceEl = document.getElementById("total-price");
+const clearCartBtn = document.getElementById("clear-cart");
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function updateCartDisplay() {
+    cartContainer.innerHTML = "";
+    let total = 0;
+
+    if (cart.length === 0) {
+        cartContainer.innerHTML = "<p>Sepetiniz boş.</p>";
+        totalPriceEl.textContent = "Toplam: ₺0";
+        return;
     }
 
-    addItem(product) {
-        const existingItem = this.items.find(item => item.id === product.id);
-        
-        if (existingItem) {
-            existingItem.quantity += 1;
-        } else {
-            this.items.push({
-                ...product,
-                quantity: 1
-            });
-        }
-        
-        this.saveCart();
-        this.updateCartUI();
-    }
-
-    removeItem(productId) {
-        this.items = this.items.filter(item => item.id !== productId);
-        this.saveCart();
-        this.updateCartUI();
-    }
-
-    getTotalItems() {
-        return this.items.reduce((total, item) => total + item.quantity, 0);
-    }
-
-    getTotalPrice() {
-        return this.items.reduce((total, item) => total + (item.price * item.quantity), 0);
-    }
-
-    saveCart() {
-        localStorage.setItem('cart', JSON.stringify(this.items));
-    }
-
-    loadCart() {
-        const savedCart = localStorage.getItem('cart');
-        if (savedCart) {
-            this.items = JSON.parse(savedCart);
-            this.updateCartUI();
-        }
-    }
-
-    updateCartUI() {
-        const cartItemsContainer = document.getElementById('cartItems');
-        const cartCountElement = document.getElementById('cartCount');
-        const cartTotalElement = document.getElementById('cartTotal');
-        
-        cartCountElement.textContent = `(${this.getTotalItems()})`;
-        
-        cartTotalElement.textContent = this.getTotalPrice();
-        
-        cartItemsContainer.innerHTML = '';
-        
-        if (this.items.length === 0) {
-            cartItemsContainer.innerHTML = '<p class="empty-cart">Sepetiniz boş</p>';
-            return;
+    cart.forEach((item, index) => {
+        if (!item.quantity) item.quantity = 1;
+        if (typeof item.price === "string") {
+            item.price = parseFloat(item.price.replace(/[^\d.,]/g, "").replace(",", "."));
         }
 
-        this.items.forEach(item => {
-            const cartItemElement = document.createElement('div');
-            cartItemElement.className = 'cart-item';
-            cartItemElement.innerHTML = `
-                <img src="${item.image}" alt="${item.name}" class="cart-item-image">
-                <div class="cart-item-details">
-                    <div class="cart-item-title">${item.name}</div>
-                    <div class="cart-item-price">${item.price} TL</div>
-                    <div class="cart-total">
-                </div>
-                <button class="cart-item-remove" onclick="cart.removeItem(${item.id})">×</button>
-            `;
-            cartItemsContainer.appendChild(cartItemElement);
+        const card = document.createElement("div");
+        card.className = "cart-item";
+        card.innerHTML = `
+            <img src="${item.image}" alt="${item.name}">
+            <div>
+                <h3>${item.name}</h3>
+                <p>Birim Fiyat: ₺${item.price.toFixed(2)}</p>
+                <p>Adet: 
+                    <button class="decrease-qty" data-index="${index}">-</button>
+                    <span>${item.quantity}</span>
+                    <button class="increase-qty" data-index="${index}">+</button>
+                </p>
+                <button class="remove-item" data-index="${index}">Sil</button>
+            </div>
+        `;
+        cartContainer.appendChild(card);
+
+        total += item.price * item.quantity;
+    });
+
+    totalPriceEl.textContent = `Toplam: ₺${total.toFixed(2)}`;
+
+    // Silme
+    document.querySelectorAll(".remove-item").forEach(button => {
+        button.addEventListener("click", e => {
+            const index = parseInt(e.target.dataset.index);
+            cart.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartDisplay();
         });
-    }
+    });
+
+    // Artır
+    document.querySelectorAll(".increase-qty").forEach(button => {
+        button.addEventListener("click", e => {
+            const index = parseInt(e.target.dataset.index);
+            cart[index].quantity += 1;
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartDisplay();
+        });
+    });
+
+    // Azalt
+    document.querySelectorAll(".decrease-qty").forEach(button => {
+        button.addEventListener("click", e => {
+            const index = parseInt(e.target.dataset.index);
+            if (cart[index].quantity > 1) {
+                cart[index].quantity -= 1;
+            } else {
+                cart.splice(index, 1);
+            }
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartDisplay();
+        });
+    });
 }
 
-const cart = new Cart();
+// Temizleme
+clearCartBtn.addEventListener("click", () => {
+    if (confirm("Sepeti tamamen silmek istiyor musunuz?")) {
+        cart = [];
+        localStorage.removeItem("cart");
+        updateCartDisplay();
+    }
+});
+
+updateCartDisplay();

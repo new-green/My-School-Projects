@@ -11,7 +11,7 @@
             <img src="../extras/pp.png" alt="Logo" class="logo">
             <div class="brand-text">
                 <span class="brand-name">New_Green Market Place TEST</span>
-                <a href="./alt-site/pre.html" class="premium-link">Özel sürümü satın al.</a>
+                <a href="../alt-site/pre.html" class="premium-link">Özel sürümü satın al.</a>
             </div>
             <div class="navbar">
                 <a href="../alt-site/cart.html" class="cart-button">
@@ -21,17 +21,11 @@
         </div>
     </section>
     <section class="cart-section">
-        <div>
-            <h2>Sepetiniz <span id="cartCount">(0)</span></h2>
-            <div class="cart-items" id="cartItems">
-                <p class="empty-cart">Sepetiniz boş</p>
-            </div>
-            <div class="cart-total">
-                Toplam: <span id="cartTotal">0</span> TL
-            </div>
-        </div>
-    </section>
+        <h1>Sepetiniz</h1>
+        <div id="cart-items"></div>
+        <h2 id="total-price">Toplam: ₺0</h2>
+        <button id="clear-cart">Sepeti Temizle</button>
+    </section>    
     <script src="../scripts/cart.js"></script>
-    
 </body>
 </html>
