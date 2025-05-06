@@ -42,7 +42,6 @@ function updateCartDisplay() {
 
     totalPriceEl.textContent = `Toplam: ₺${total.toFixed(2)}`;
 
-    // Silme
     document.querySelectorAll(".remove-item").forEach(button => {
         button.addEventListener("click", e => {
             const index = parseInt(e.target.dataset.index);
@@ -62,7 +61,6 @@ function updateCartDisplay() {
         });
     });
 
-    // Azalt
     document.querySelectorAll(".decrease-qty").forEach(button => {
         button.addEventListener("click", e => {
             const index = parseInt(e.target.dataset.index);
@@ -77,7 +75,6 @@ function updateCartDisplay() {
     });
 }
 
-// Temizleme
 clearCartBtn.addEventListener("click", () => {
     if (confirm("Sepeti tamamen silmek istiyor musunuz?")) {
         cart = [];

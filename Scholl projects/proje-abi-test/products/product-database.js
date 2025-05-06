@@ -8,7 +8,9 @@ const products = [
         installment: 6,
         stock: 10,
         brand: "TechMaster",
-        rating: 4.8
+        rating: 4.8,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
+        comment: "Herkese Selam: amet consectetur adipisicing elit"   
     },
     {
         id: 2,
@@ -19,7 +21,9 @@ const products = [
         installment: 3,
         stock: 15,
         brand: "SoundWave",
-        rating: 4.5
+        rating: 4.5,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
+        comment: "Herkese Selam: amet consectetur adipisicing elit"  
     },
     {
         id: 3,
@@ -30,7 +34,10 @@ const products = [
         installment: 9,
         stock: 8,
         brand: "HomeChef",
-        rating: 4.7
+        rating: 4.7,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
+        comment: "Herkese Selam: amet consectetur adipisicing elit"  
+
     },
     {
         id: 4,
@@ -42,7 +49,10 @@ const products = [
         stock: 20,
         brand: "FastStep",
         rating: 4.9,
-        sizes: ["38", "39", "40", "41"]
+        sizes: ["38", "39", "40", "41"],
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
+        comment: "Herkese Selam: amet consectetur adipisicing elit"  
+
     },
     {
         id: 5,
@@ -53,7 +63,10 @@ const products = [
         installment: 1,
         stock: 50,
         brand: "EcoLife",
-        rating: 4.6
+        rating: 4.6,
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
+        comment: "Herkese Selam: amet consectetur adipisicing elit"  
+
     },
     {
         id: 6,
@@ -65,7 +78,10 @@ const products = [
         stock: 5,
         brand: "VisionPlus",
         rating: 4.8,
-        features: ["4K UHD", "Smart TV", "HDR10+"]
+        features: ["4K UHD", "Smart TV", "HDR10+"],
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
+        comment: "Herkese Selam: amet consectetur adipisicing elit"
+
     },
     {
         id: 7,
@@ -77,7 +93,9 @@ const products = [
         stock: 30,
         brand: "FunWorld",
         rating: 4.4,
-        ageGroup: "3-6 Yaş"
+        ageGroup: "3-6 Yaş",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
+        comment: "Herkese Selam: amet consectetur adipisicing elit"  
     },
     
 ];

@@ -6,7 +6,8 @@ window.onload = () => {
         document.getElementById('product-name').textContent = product.name;
         document.getElementById('product-price').textContent = `₺${product.price.toFixed(2)}`;
         document.getElementById('product-brand').textContent = product.brand;
-        document.getElementById('product-description').textContent = product.description;
+        document.getElementById('product-description').textContent = product.desc;
+        document.getElementById('product-comments').textContent = product.comment;
     } else {
         document.body.innerHTML = "<p>Ürün bulunamadı.</p>";
     }
