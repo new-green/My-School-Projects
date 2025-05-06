@@ -13,4 +13,12 @@ void main() {
   print("b'nin önceki değeri: $b");
   --b;
   print("b'nin sonraki değeri: $b");
+  /*
+  ---"--"---
+  "--" operatörü ise önce değişkeni azaltır ve sonra değişkeni kullanır.
+  Değişkenin içersindeki önceki değer silinir ve yeni azaltılmış değer yazdırılır.
+  */ /*
+  Print değeri içersinde yazılsa bir değişkenin yeni değeri yazdırılır.
+  Bu şekilde kullanılır ise hata verir. "print("b'nin yeni değeri $++b");" InvalidType hatası verir.
+  */
 }

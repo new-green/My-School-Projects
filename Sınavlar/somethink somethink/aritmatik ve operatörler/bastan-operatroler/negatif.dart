@@ -1,5 +1,6 @@
 void main() {
   /*
+  ------Aritmatik operatörler------
   -------Ön ek operatörleri-------
   Ön ek operatröleri adından da anlaşılacağı üzere değişkenin yazımından önce kullanılır.
   */
