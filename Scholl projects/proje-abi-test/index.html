@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="./css/main-page.css">
 </head>
 <body>
+    <!-- HTML -->
+    <button id="openBtn">☰ Aç</button>
+    
+    <div id="sidebar" class="sidebar">
+      <button id="closeBtn">×</button>
+      <h2>Menü</h2>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+
     <section class="parent-section">
         <div class="logo-container">
             <img src="./extras/pp.png" alt="Logo" class="logo">
@@ -27,5 +38,20 @@
     <script src="./products/product-database.js"></script>
     <script src="./scripts/get-prodcut.js"></script>
     <footer>New_Green tarafından kodlandı. Proje ödevi içindir</footer>
+    <script>
+        // JavaScript
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const sidebar = document.getElementById('sidebar');
+            
+        openBtn.addEventListener('click', () => {
+          sidebar.classList.add('open');
+        });
+        
+        closeBtn.addEventListener('click', () => {
+          sidebar.classList.remove('open');
+        });
+
+    </script>
 </body>
 </html>
