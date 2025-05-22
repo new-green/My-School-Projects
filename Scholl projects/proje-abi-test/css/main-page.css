@@ -1,37 +1,81 @@
+/* Giriş animasyonu body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #121212;
     color: aliceblue;
     margin: 0;
     padding: 0;
+    animation: fadeInBody 1.5s ease-in-out;
 }
 
+/* Fade-in */
+@keyframes fadeInBody {
+    0% {opacity: 0;
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Başlık animasyonu */
 h1 {
     margin: 0;
     padding: 10px 0;
     text-align: left;
+    animation: textGlow 2s ease-in-out infinite alternate;
 }
 
+/* Glow efekti */
+@keyframes textGlow {
+    from{text-shadow: 0 0 10px #00f2ff, 0 0 20px #00c2ff; 
+    }
+    to{text-shadow: 0 0 20px #00f2ff, 0 0 30px #00c2ff;
+    }
+}
+
+/* Bölüm kutuları */
 .parent-section {
     background-color: #1e1e1e;
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    animation: slideIn 1.2s ease-in-out;
 }
 
+/* Slide in */
+@keyframes slideIn {
+    from { transform: translateY(30px);
+        opacity: 0;
+    }
+    to {transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Logo alanı */
 .logo-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    animation: slideIn 1.5s ease-in-out;
 }
 
 .logo {
     height: 50px;
     margin-right: 10px;
+    transition: transform 0.4s ease;
 }
 
+.logo:hover {
+    transform: rotate(-8deg) scale(1.15);
+    filter: drop-shadow(0 0 6px cyan);
+}
+
+/* Marka metin */
 .brand-text {
     display: flex;
     flex-direction: column;
@@ -46,30 +90,51 @@ h1 {
 
 .premium-link {
     font-size: 14px;
-    color: #888;
+    color: #0ff;
     text-decoration: none;
+    transition: all 0.4s ease;
+    text-shadow: 0 0 8px #0ff;
 }
 
 .premium-link:hover {
-    text-decoration: underline;
+    color: #fff;
+    text-shadow: 0 0 12px #0ff, 0 0 20px #0ff;
 }
 
+/* Navbar efekti */
 .navbar {
     margin-left: auto;
+    box-shadow: inset 0 0 0 transparent;
+    transition: box-shadow 0.5s ease;
 }
 
+.navbar:hover {
+    box-shadow: inset 0 -3px 0 #00f2ff;
+}
+
+/* Sepet ikonu */
 .cart-filter {
     filter: brightness(1) grayscale(1);
     width: 40px;
+    transition: all 0.4s ease;
 }
 
+.cart-filter:hover {
+    filter: brightness(2) grayscale(0) drop-shadow(0 0 4px white);
+}
+
+/* Arama barı animasyon */
 .search-bar {
     display: flex;
     justify-content: center;
     margin: 20px 100px;
     flex-wrap: wrap;
+    animation: fadeInBody 1.5s ease-in-out;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+    border-radius: 12px;
 }
 
+/* Ürün listesi */
 #product-list {
     display: flex;
     flex-wrap: wrap;
@@ -78,47 +143,74 @@ h1 {
     padding: 0 10px;
 }
 
+/* Ürün kartları */
 .product {
-    background-color: #3e3e3e;
-    border-radius: 8px;
+    background-color: #2a2a2a;
+    border-radius: 12px;
     padding: 20px;
     width: 240px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 255, 255, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardEntrance 0.6s ease forwards;
+    animation-delay: calc(var(--i) * 0.1s);
 }
 
+/* Scroll'da görünme efekti için JS gerekir */
+@keyframes cardEntrance {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product:hover {
+    transform: scale(1.08) rotateZ(-1deg);
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.3);
+    background-color: #444;
+}
+
+/* Resim efekti (istersen JS ile 3D tilt veririm) */
 .product img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    transition: transform 0.5s ease;
 }
 
+.product img:hover {
+    transform: scale(1.08) rotateZ(1deg);
+}
+
+/* Başlık ve açıklama */
 .product h3 {
     font-size: 18px;
     color: #c1c1c1;
     margin-top: 10px;
+    text-shadow: 0 0 3px #0ff;
 }
 
 .product p {
     font-size: 14px;
-    color: #999;
+    color: #aaa;
     margin-top: 5px;
 }
 
-.product:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
+/* Footer */
 footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
     background-color: #1e1e1e;
     color: white;
+    border-top: 1px solid #333;
+    text-shadow: 0 0 6px #888;
+    animation: fadeInBody 2s ease-in-out;
 }
 
+/* Mobil responsive */
 @media (max-width: 768px) {
     .logo-container {
         flex-direction: column;

@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>Fiyat: ₺${p.price.toFixed(2)}</p>
             <p>Marka: ${p.brand}</p>
             <p>Puan: ${getStars(p.rating)}</p>
+            <button id="add-to-cart" class="cart-button">Sepete Ekle</button>
         `;
 
         // Tıklama event'i ekleyip ürünü localStorage'a kaydedip product.html'e yönlendir
