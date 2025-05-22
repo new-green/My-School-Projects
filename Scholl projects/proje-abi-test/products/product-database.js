@@ -35,7 +35,7 @@ const products = [
         stock: 8,
         brand: "HomeChef",
         rating: 4.7,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
+        desc: "Bu kahve makinesi hayatınızda göreceğiniz her şeyden daha iyi.\nBu cihaz istediğiniz zaman her şeyi yapabilecek kapasitede. Evinize yaklaşmadan 5 saat önce kahve programına alın ve eve gelmenize yakın bir zamanda kahvenizi pişirmeye başlasın. Özellikleri şunlardır. Andırıt 12.1, 8 GB ram ve 128 GB depolaması ve içerisindeki SİPİU ise Kualkom Gen eğiyt. Gerçekçi bir Zenless Zone Zero, Geyşit İmpekt, Honkayi Sıtar Rayil oynama imkanı. Hem kahveni iç hemde oyununu oyna be. Nerde bu fırsat. Aynı sekment bir Oppo alsan 1499.00₺ ye alamayacaksın. Ayrıca bunda 'fastboot' açık. Rom atarsın ama kahve yapamazsın. Sıkıntı o. Her zaman evden uzak olduğunda kahveni koy ve beklemeye başla. Kahven eve geldiğinde hazır olsun ve kahveni iç...",
         comment: "Herkese Selam: amet consectetur adipisicing elit"  
 
     },

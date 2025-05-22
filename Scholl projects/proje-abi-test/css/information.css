@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+.headerdiv {
+    display: flex;
+    background-color: #1e1e1e;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.parent-section {
+    background-color: #1e1e1e;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: wave 3s ease-in-out infinite;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.brand-name {
+    font-size: 20px;
+    color: #c0c0c0;
+}
+
+.premium-link {
+    font-size: 14px;
+    color: #888;
+    text-decoration: none;
+}
+
+.premium-link:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.cart-filter {
+    filter: brightness(1) grayscale(1);
+    width: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.topdiv {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.whydothis {
+    margin-top: 20px;
+    border-radius: 10px;
+}
