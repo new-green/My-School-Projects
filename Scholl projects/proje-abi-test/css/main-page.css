@@ -120,7 +120,7 @@ h1 {
 }
 
 .cart-filter:hover {
-    filter: brightness(2) grayscale(0) drop-shadow(0 0 4px white);
+    filter: brightness(2) grayscale(0) drop-shadow(0 0 4px snow);
 }
 
 /* Arama barı animasyon */
@@ -204,7 +204,7 @@ footer {
     padding: 20px 0;
     margin-top: 20px;
     background-color: #1e1e1e;
-    color: white;
+    color: snow;
     border-top: 1px solid #333;
     text-shadow: 0 0 6px #888;
     animation: fadeInBody 2s ease-in-out;
@@ -282,5 +282,37 @@ footer {
 
 .sidebar a:hover {
   background-color: #444;
-  color: white;
+  color: snow;
+}
+
+.add-to-cart-btn{
+    margin: 10px;
+    background-color: #c0c0c0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInButton 1.8s ease forwards;
+}
+
+.product-type-select {
+    background-color: #444;
+    color: snow;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.product-type-select:hover {
+    background-color: #555;
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.product-type-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #888;
+    transform: scale(1.05);
 }

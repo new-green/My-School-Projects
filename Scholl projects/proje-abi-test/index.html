@@ -7,17 +7,6 @@
     <link rel="stylesheet" href="./css/main-page.css">
 </head>
 <body>
-    <!-- HTML -->
-    <button id="openBtn">☰ Aç</button>
-    
-    <div id="sidebar" class="sidebar">
-      <button id="closeBtn">×</button>
-      <h2>Menü</h2>
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-
     <section class="parent-section">
         <div class="logo-container">
             <img src="./extras/pp.png" alt="Logo" class="logo">
@@ -26,7 +15,17 @@
                 <a href="./alt-site/pre.html" class="premium-link">Özel sürümü satın al.</a>
             </div>
             <div class="navbar">
-                <a href="./alt-site/cart.html" class="cart-button">
+                
+                <button id="openBtn" style="background-color: transparent;">☰</button>
+                <div id="sidebar" class="sidebar">
+                    <button id="closeBtn">×</button>
+                    <h2>Menü</h2>
+                    <a href="./alt-site/information.html">Hakkımızda</a>
+                    <a href="./alt-site/contact.html">İletişim</a>
+                    <a href="./alt-site/pre.html">Pre</a>
+                    <a href="./alt-site/cart.html">Sepet</a>
+                </div>
+                <a href="./alt-site/cart.html" style="margin-right: 50px;" class="cart-button">
                     <img src="./extras/cart.png" alt="Sepet" width="50" class="cart-filter">
                 </a>
             </div>
@@ -37,21 +36,8 @@
     </section>
     <script src="./products/product-database.js"></script>
     <script src="./scripts/get-prodcut.js"></script>
+    <script src="./scripts/sidebar.js"></script>
     <footer>New_Green tarafından kodlandı. Proje ödevi içindir</footer>
-    <script>
-        // JavaScript
-        const openBtn = document.getElementById('openBtn');
-        const closeBtn = document.getElementById('closeBtn');
-        const sidebar = document.getElementById('sidebar');
-            
-        openBtn.addEventListener('click', () => {
-          sidebar.classList.add('open');
-        });
-        
-        closeBtn.addEventListener('click', () => {
-          sidebar.classList.remove('open');
-        });
 
-    </script>
 </body>
 </html>

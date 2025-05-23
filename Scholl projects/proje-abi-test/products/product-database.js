@@ -8,9 +8,21 @@ const products = [
         installment: 6,
         stock: 10,
         brand: "TechMaster",
+        types: ["13", "14", "15"],
         rating: 4.8,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
-        comment: "Herkese Selam: amet consectetur adipisicing elit"   
+        desc: "Bu saat sadece zamanı göstermekle kalmaz, zamanı size göre bükebilir (henüz beta sürümünde). İçindeki yapay zeka, gününüzü planlamaktan çok, size 'Dur be Reis, biraz nefes al' demeye programlandı. Sağlık sensörleri o kadar hassas ki, stres seviyenizi ölçerken 'Bugün bir bira içsen iyi olur' diye öneri bile yapabilir. %100 su geçirmez, ama su altında da Twitter takip etmek isterseniz, bir çılgınlık olur. Şarj süresi 48 saat ama son 2 saatinde saatiniz size 'Kanka, acil kahve lazım' mesajı atıyor.",
+        comment: [
+            "Bu saat yüzünden toplantıya geç kalmadım, tam bir kurtarıcı!",
+            "Bazen aşırı bildirim atıyor ama o da nazar değmesin diye herhalde.",
+            "TechMaster her zaman işinin ustası, tasarım harika.",
+            "Sağlık uygulamaları sayesinde nefes egzersizi yapmayı öğrendim.",
+            "Fiyat biraz yüksek ama karşılığı var, zaten kaliteyi ucuz aramayın.",
+            "Arkadaşlar, kesin alın derim, hem şık hem işlevsel.",
+            "Saatin GPS'iyle kaybolmak imkansız, yanılmıyorsam Elon Musk da kullanıyor.",
+            "Yapay zekası bazen espri yapıyor, günümü güzelleştiriyor.",
+            "Ekranı güneş altında bile süper okunuyor, dışarıda bile parıldıyor.",
+            "Kolaylıkla telefonla senkronize oluyor, kurulum 5 dakika."
+        ]
     },
     {
         id: 2,
@@ -21,9 +33,21 @@ const products = [
         installment: 3,
         stock: 15,
         brand: "SoundWave",
+        types: ["Beyaz", "Siyah", "Gece mavisi", "Çirkin Turuncu"],
         rating: 4.5,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
-        comment: "Herkese Selam: amet consectetur adipisicing elit"  
+        desc: "Kulaklığın ses kalitesi öyle bir seviyede ki, sanki ünlü sanatçılar doğrudan kulağınıza fısıldıyor. Gürültü engelleme modu o kadar iyi ki, kalabalık metroda bile kendi dünyanızda müzik keyfi yapabilirsiniz. Şarjı tam 10 saat gidiyor, hatta maraton film izlerken yarıda kalmaz. Bluetooth bağlantısı o kadar stabil ki, odanın diğer ucunda telefonunuz olsa bile müziği hiç koparmadan dinleyebilirsiniz. Bir de kulaklıkların üzerinde gizli bir oyun modu var, takınca kendinizi DJ zannedeceksiniz (bu kısmı henüz test etmedik).",
+        comment: [
+            "Ses kalitesi müthiş, baslar derin, tizler net.",
+            "Konforlu tasarımı sayesinde uzun süre taktım, kulak ağrısı yok.",
+            "Bağlantı kopması yaşamadım, çok stabil.",
+            "Şarj süresi beklediğimden uzun çıktı, çok iyi.",
+            "Fiyatına göre performansı süper, özellikle kablo derdi yok.",
+            "Müzik dinlerken sanki stüdyodaymışsınız gibi hissettim.",
+            "İki tane aldım, biri bana biri eşime, şimdi kavga ediyoruz kimin olduğu için.",
+            "Sesi dışarıya az veriyor, ofiste kullanmak için ideal.",
+            "Telefon çağrılarında mikrofon performansı da iyi, karşı taraf net duyuyor.",
+            "Tekrar alırım kesinlikle, memnun kaldım."
+        ]
     },
     {
         id: 3,
@@ -36,8 +60,18 @@ const products = [
         brand: "HomeChef",
         rating: 4.7,
         desc: "Bu kahve makinesi hayatınızda göreceğiniz her şeyden daha iyi.\nBu cihaz istediğiniz zaman her şeyi yapabilecek kapasitede. Evinize yaklaşmadan 5 saat önce kahve programına alın ve eve gelmenize yakın bir zamanda kahvenizi pişirmeye başlasın. Özellikleri şunlardır. Andırıt 12.1, 8 GB ram ve 128 GB depolaması ve içerisindeki SİPİU ise Kualkom Gen eğiyt. Gerçekçi bir Zenless Zone Zero, Geyşit İmpekt, Honkayi Sıtar Rayil oynama imkanı. Hem kahveni iç hemde oyununu oyna be. Nerde bu fırsat. Aynı sekment bir Oppo alsan 1499.00₺ ye alamayacaksın. Ayrıca bunda 'fastboot' açık. Rom atarsın ama kahve yapamazsın. Sıkıntı o. Her zaman evden uzak olduğunda kahveni koy ve beklemeye başla. Kahven eve geldiğinde hazır olsun ve kahveni iç...",
-        comment: "Herkese Selam: amet consectetur adipisicing elit"  
-
+        comment: [
+            "Kahvemi pişirirken oyuna dalıyorum, harika bir deneyim!",
+            "Evden uzaktayken bile kahvem hazır, teknoloji harikası.",
+            "Oyun ve kahve aynı anda? Kim yapar ki böyle şeyi!",
+            "Fiyat biraz yüksek ama değiyor.",
+            "Fastboot açık demişler, ilk başta ne olduğunu bilemedim ama sonra çok sevdim.",
+            "Oppo'yu unutun, kahve makinesi kral!",
+            "Bazen kahve yaparken telefonla oyun açmak zor oluyor, ikisi bir arada biraz zorluyor.",
+            "Misafirlerim kahve makinemden çok etkilendi, adeta 'kıyamet' kahvesi.",
+            "Tasarımı süper, mutfağımın en havalı parçası oldu.",
+            "HomeChef markası kalitesini belli ediyor, şiddetle öneririm."
+        ]
     },
     {
         id: 4,
@@ -49,10 +83,20 @@ const products = [
         stock: 20,
         brand: "FastStep",
         rating: 4.9,
-        sizes: ["38", "39", "40", "41"],
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
-        comment: "Herkese Selam: amet consectetur adipisicing elit"  
-
+        types: ["38", "39", "40", "41"],
+        desc: "Yürürken yer çekimini azaltan bir teknoloji olsaydı, işte tam böyle olurdu. Bu ayakkabılar o kadar hafif ki, yürürken değil uçuyormuş gibi hissedeceksiniz. Antrenman sonrası kendinizi süper kahraman gibi hissedeceksiniz. Ayak bileğinizle adeta senkronize hareket eden bu ayakkabılar, her adımı dans pistine çevirebilir. 41 numara özellikle denge sağlama modülüyle ekstra puan kazanıyor. Eğer koşarken kendinizi uçmak istiyorsanız, bu ayakkabılar tam size göre.",
+        comment: [
+            "Koşu performansımda büyük fark yarattı, hemen fark ettim.",
+            "Bir haftadır kullanıyorum, ayağımda hiç rahatsızlık yok.",
+            "Renk seçenekleri daha fazla olsa süper olurdu ama kalite tartışılmaz.",
+            "Marka kalitesi gerçekten hissediliyor, FastStep helal olsun.",
+            "Uzun yürüyüşlerde ayaklarım hiç yorulmuyor.",
+            "Birkaç arkadaşım da aldı, hepsi bayıldı.",
+            "Spor salonunda herkes nereden aldığımı soruyor.",
+            "Ayakkabının tabanı ekstra kaymaz, yağmurda bile rahatlıkla kullandım.",
+            "Fiyatı yüksek ama bence değer.",
+            "Koşarken kendimi sanki Formula 1 pilotu gibi hissediyorum."
+        ]
     },
     {
         id: 5,
@@ -64,38 +108,138 @@ const products = [
         stock: 50,
         brand: "EcoLife",
         rating: 4.6,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
-        comment: "Herkese Selam: amet consectetur adipisicing elit"  
-
+        desc: "Doğanın kucağından mutfağınıza gelen bu bambu bardak seti, hem şıklığı hem de çevreci yapısıyla fark yaratıyor. Plastik bardaklara veda edin, çünkü bu bardaklar doğada çözünüyor ve geri dönüşümü çocuk oyuncağı. Bardakların dokusu o kadar doğal ki, elinizde tutarken kendinizi ormanda bir kamp ateşi başında hissedebilirsiniz. Sıcak içecekleri bile koyabilirsiniz, çünkü bambu ısıyı dengeliyor ve elinizi yakmıyor. Misafirlerinize sunarken hem şık hem çevreci olduğunuzu göstermek için birebir.",
+        comment: [
+            "Bardaklar çok hafif ve kullanışlı, kesinlikle tavsiye ederim.",
+            "Çevreci olmaları en büyük artı, doğaya katkı sağlamak güzel.",
+            "Temizlemesi çok kolay, leke tutmuyor.",
+            "Fiyatına göre kalitesi müthiş, 10/10 ürün.",
+            "Misafirlerim çok beğendi, herkes nereden aldığımı soruyor.",
+            "Doğal ve şık, mutfağımın yeni gözdesi oldu.",
+            "Biraz daha farklı boyutlarda da olsaydı süper olurdu.",
+            "Kırılma riski sıfır, çocuklar için ideal.",
+            "Bambu kokusu çok hafif ve hoş, rahatsız etmiyor.",
+            "Ambalajı da doğa dostu, kutuyu atmamak lazım."
+        ]
     },
     {
         id: 6,
-        name: "Akıllı LED TV 55''",
-        price: 8999.00,
-        image: "led-tv.jpg",
+        name: "Dijital Kamera",
+        price: 3499.00,
+        image: "kamera.jpg",
         category: "Elektronik",
         installment: 12,
         stock: 5,
-        brand: "VisionPlus",
-        rating: 4.8,
-        features: ["4K UHD", "Smart TV", "HDR10+"],
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
-        comment: "Herkese Selam: amet consectetur adipisicing elit"
-
+        brand: "PixelPro",
+        rating: 4.9,
+        desc: "Bu dijital kamera, profesyoneller kadar amatörlerin de gözdesi. 24MP çözünürlük ve 4K video çekim kapasitesiyle anılarınız hiç bu kadar net olmamıştı. Kameranın yapay zekası, en iyi çekimi bulmak için sahneyi analiz ediyor, böylece siz sadece deklanşöre basıyorsunuz. ISO ayarları ve otomatik netleme sistemi, gece çekimlerinde bile sizi şaşırtacak performansta. Ağırlığı ve ergonomik tasarımı sayesinde uzun çekimlerde bile kolunuz yorulmaz. Ayrıca Wi-Fi bağlantısı ile çektiğiniz fotoğrafları anında telefonunuza aktarabilirsiniz.",
+        comment: [
+            "Fotoğraf kalitesi gerçekten müthiş, profesyonel çekim yapıyorum.",
+            "4K videolar inanılmaz detaylı ve akıcı.",
+            "Batarya süresi biraz kısa ama yedek pil iş görür.",
+            "Tasarım ve ergonomi çok iyi, uzun çekimlerde yorulmuyorum.",
+            "Wi-Fi bağlantısı sayesinde anında paylaşım çok pratik.",
+            "Her seviyeden kullanıcıya uygun, kullanımı kolay.",
+            "Gece modunda çektiğim fotoğraflar hayran bıraktı.",
+            "PixelPro kalitesi gerçekten fark yaratıyor.",
+            "Mekanik titreşim engelleme çok başarılı, fotoğraflar net.",
+            "Kesinlikle tavsiye ederim, pişman olmazsınız."
+        ]
     },
     {
         id: 7,
-        name: "Toptan Çocuk Oyuncak Seti",
-        price: 349.90,
-        image: "oyuncak-set.jpg",
-        category: "Oyuncak",
+        name: "Kablosuz Şarj Cihazı",
+        price: 299.90,
+        image: "sarj-cihazi.jpg",
+        category: "Elektronik",
+        installment: 2,
+        stock: 25,
+        brand: "ChargeMate",
+        rating: 4.4,
+        desc: "Kablosuz şarj teknolojisinin son noktası! Bu cihaz, telefonunuzu sadece üzerine koymanızla şarj etmeye başlar; kablo karmaşasına son. Şık tasarımı ile masaüstünüzü güzelleştirirken, hızlı şarj özelliğiyle de zamanınızı boşa harcamaz. Uyku modunda bile minimum enerji tüketir, böylece elektrik faturanıza dosttur. Üstelik, farklı telefon modelleriyle tam uyumludur, markadan bağımsız rahatlıkla kullanabilirsiniz. Taşınabilir ve hafif yapısıyla, istediğiniz her yere kolayca götürebilirsiniz.",
+        comment: [
+            "Hızlı şarj özelliği beklediğimden iyiydi, memnun kaldım.",
+            "Kablo karmaşasından kurtulmak müthiş rahatlık.",
+            "Masaüstüm artık çok daha düzenli görünüyor.",
+            "Bazı telefon modelleriyle tam uyumlu çalışıyor.",
+            "Şarj hızı USB kablo kadar hızlı değil ama yeterli.",
+            "Taşınabilir olması seyahatlerde avantaj sağlıyor.",
+            "Fiyat performans dengesi iyi, ben beğendim.",
+            "Cihaz hafif ve küçük, yer kaplamıyor.",
+            "Uyku modunda enerji tasarrufu gerçekten işe yarıyor.",
+            "Arkadaşlarıma da önerdim, onlar da aldı."
+        ]
+    },
+    {
+        id: 8,
+        name: "Yoga Matı",
+        price: 179.90,
+        image: "yoga-mati.jpg",
+        category: "Spor",
+        installment: 1,
+        stock: 40,
+        brand: "ZenBalance",
+        rating: 4.7,
+        desc: "ZenBalance yoga matı, esnekliği ve kaymaz yüzeyi ile hem yeni başlayanlara hem de ileri seviyeye hitap eder. 6 mm kalınlığındaki yapısıyla eklemlerinizi korurken, hafif yapısı sayesinde taşıması çok kolaydır. Matın yüzeyi, terlediğinizde bile sağlam tutuş sağlar, böylece pozlarınızı mükemmel yapabilirsiniz. Ayrıca çevre dostu malzemelerden üretilmiş olup, doğaya zarar vermeden ruhunuzu ve bedeninizi dengeleyebilirsiniz. Geniş renk seçenekleri ile tarzınıza uygun olanı seçebilirsiniz.",
+        comment: [
+            "Matın kaymaz yüzeyi gerçekten etkili, rahat çalışıyorum.",
+            "Kalınlığı sayesinde dizlerim ağrımıyor, çok konforlu.",
+            "Taşıması çok pratik, spor salonuna götürüyorum.",
+            "Çevreci olması benim için önemli, ZenBalance iyi iş yapmış.",
+            "Renk seçenekleri daha fazla olsa keşke ama olsun.",
+            "Fiyatına göre kalite çok iyi, kesinlikle tavsiye ederim.",
+            "Uzun süre kullanıyorum, deformasyon olmadı.",
+            "Yoga pratiğim çok gelişti, rahatlık çok önemliymiş meğer.",
+            "Arkadaşlarıma da önerdim, onlar da memnun kaldı.",
+            "Şık tasarımı sayesinde evde spor köşem çok daha güzel görünüyor."
+        ]
+    },
+    {
+        id: 9,
+        name: "LED Masa Lambası",
+        price: 249.90,
+        image: "masa-lambasi.jpg",
+        category: "Ev Yaşam",
         installment: 2,
         stock: 30,
-        brand: "FunWorld",
-        rating: 4.4,
-        ageGroup: "3-6 Yaş",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio repellat totam incidunt delectus consequuntur facilis ad aliquam natus sunt, a maiores veritatis iste culpa dolores voluptas. Perspiciatis, nesciunt. Soluta non cumque molestias aspernatur culpa quibusdam maxime esse, rem eligendi cum, tenetur nesciunt exercitationem veritatis architecto adipisci. Recusandae quam iste odit consectetur inventore, eligendi eveniet culpa eos cum excepturi? Molestiae exercitationem ipsa culpa voluptatem cumque, eum expedita corporis modi vitae at officiis accusamus reiciendis deserunt inventore voluptates nisi ipsum dolorum beatae quos. At quidem corporis consequuntur, veniam deleniti labore laborum velit harum est, eum animi quisquam ipsam odio officiis totam!",
-        comment: "Herkese Selam: amet consectetur adipisicing elit"  
+        brand: "BrightLite",
+        rating: 4.5,
+        desc: "BrightLite LED masa lambası, çalışma ve okuma alanınızı aydınlatırken gözlerinizi yormaz. Dokunmatik paneli ile ışık şiddetini ve rengini kolayca ayarlayabilirsiniz. USB çıkışı sayesinde telefonunuzu da şarj edebilirsiniz. Enerji tasarruflu LED ışıklar uzun ömürlüdür ve ısı yaymaz, bu sayede masanız her zaman serin kalır. Minimalist tasarımı, her dekorasyona uyum sağlar ve masanızda yer kaplamaz. Çalışma verimliliğinizi artırmak için ideal bir yardımcıdır.",
+        comment: [
+            "Işık ayarları çok kullanışlı, istediğim parlaklığı buluyorum.",
+            "USB çıkışı çok pratik, telefonumu kolayca şarj ediyorum.",
+            "Tasarımı çok şık ve modern, masamda çok güzel duruyor.",
+            "Enerji tasarruflu olması iyi, elektrik faturam düşmeye başladı.",
+            "Dokunmatik panel hızlı ve hassas çalışıyor.",
+            "Uzun çalışma saatlerinde gözlerim hiç yorulmuyor.",
+            "Kompakt yapısı sayesinde yer kaplamıyor, çok memnunum.",
+            "Fiyatına göre kalite üst düzey, tavsiye ederim.",
+            "LED ışıkların renk seçenekleri çok güzel, ambiyans yaratıyor.",
+            "Kargoda herhangi bir hasar olmadı, paketleme başarılı."
+        ]
     },
-    
+    {
+        id: 10,
+        name: "Elektrikli Süpürge",
+        price: 999.00,
+        image: "supurge.jpg",
+        category: "Ev Yaşam",
+        installment: 6,
+        stock: 12,
+        brand: "CleanForce",
+        rating: 4.6,
+        desc: "CleanForce elektrikli süpürge, güçlü motoru ve yüksek emiş gücüyle evinizi derinlemesine temizler. Toz haznesi geniş ve kolay boşaltılır, böylece temizlik sırasında elleriniz kirlenmez. Çok sessiz çalışması sayesinde çocuklar uyurken bile temizlik yapabilirsiniz. Hafif tasarımı ve uzun kablosu, her köşeye kolayca ulaşmanızı sağlar. Farklı zemin türlerine uygun başlıkları sayesinde halıdan sert zemine geçişte performans düşmez. Enerji tasarruflu yapısı hem çevreyi hem de cebinizi korur.",
+        comment: [
+            "Emiş gücü beklediğimden yüksek çıktı, çok memnunum.",
+            "Sessiz çalışması en büyük artı, rahatsız etmiyor.",
+            "Toz haznesi kolay temizleniyor, hijyenik.",
+            "Farklı başlık seçenekleri çok kullanışlı.",
+            "Kablolu olmasına rağmen uzun kablo rahat hareket sağlıyor.",
+            "Fiyatına göre performans iyi, tavsiye ederim.",
+            "Halıda ve sert zeminde performansı stabil.",
+            "Temizlik işi artık eziyet olmaktan çıktı.",
+            "Marka güvenilir, garanti süreci hızlı işliyor.",
+            "Ağır değil, uzun süre kullanırken yorulmuyorum."
+        ]
+    }
 ];
